@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome (CORS-safe version without integrity) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+  <!-- Weather Icons CDN (if used) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+  />
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <div class="container">
+    <h1>Weather Forecast App</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button id="search-button">Search</button>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+    <div id="weather-result"></div>
+
+    <h2>5-Day Forecast</h2>
+    <div id="forecast" class="forecast"></div>
+
+    <section class="climate-section">
+      <h3>Current Climate Climatology</h3>
+      <p>
+        This page presents Nigeria's climate context for the current climatology, 1991–2025, derived from observed ,historical data. Information should be used to build strong understanding of current climate conditions in order to appreciate future climate scenarios and projected change. You can visualize data for the current climatology through spatial variation, the seasonal cycle , or as a time series.
+          Analysis is available for both annual and seasonal data . Data presentation defaults to national-scale aggregation , however sub-national data aggregation can be accessed by clicking within a country , on a sub-national unit.Other historical climatologies can be selected from the Time Period dropdown list.....
+        <!-- You can truncate or expand this as needed -->
+      </p>
+    </section>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
